@@ -69,7 +69,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="StY-Ma-shL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="StY-Ma-shL" customClass="CustomButton" customModule="Calculator" customModuleProvider="target">
                                 <rect key="frame" x="37.5" y="196.5" width="67.5" height="67.5"/>
                                 <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -91,7 +91,7 @@
                                     <action selector="touchDigit:" destination="ney-aN-ZO2" eventType="touchUpInside" id="2P7-Rf-xFM"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b0G-uE-r5Y" userLabel="superview Of Display">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b0G-uE-r5Y" userLabel="superview Of Display" customClass="CustomButton" customModule="Calculator" customModuleProvider="target">
                                 <rect key="frame" x="37.5" y="120" width="300" height="66.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khk-JW-Ob8">
@@ -141,7 +141,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuz-S7-scK">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuz-S7-scK" customClass="CustomButton" customModule="Calculator" customModuleProvider="target">
                                 <rect key="frame" x="115" y="196.5" width="67.5" height="67.5"/>
                                 <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -163,7 +163,7 @@
                                     <action selector="touchDigit:" destination="ney-aN-ZO2" eventType="touchUpInside" id="8gQ-4J-IGb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjK-de-kIL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjK-de-kIL" customClass="CustomButton" customModule="Calculator" customModuleProvider="target">
                                 <rect key="frame" x="37.5" y="274" width="67.5" height="67.5"/>
                                 <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -185,7 +185,7 @@
                                     <action selector="touchDigit:" destination="ney-aN-ZO2" eventType="touchUpInside" id="zp4-O9-2eb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4M-Zp-Wp1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4M-Zp-Wp1" customClass="CustomButton" customModule="Calculator" customModuleProvider="target">
                                 <rect key="frame" x="115" y="274" width="67.5" height="67.5"/>
                                 <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -207,7 +207,7 @@
                                     <action selector="touchDigit:" destination="ney-aN-ZO2" eventType="touchUpInside" id="TZV-Vd-6kz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owF-ia-dB9">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owF-ia-dB9" customClass="CustomButton" customModule="Calculator" customModuleProvider="target">
                                 <rect key="frame" x="193" y="274" width="67.5" height="67.5"/>
                                 <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -229,7 +229,7 @@
                                     <action selector="touchDigit:" destination="ney-aN-ZO2" eventType="touchUpInside" id="pNX-cI-RcG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqE-X2-Vy0">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqE-X2-Vy0" customClass="CustomButton" customModule="Calculator" customModuleProvider="target">
                                 <rect key="frame" x="270" y="196.5" width="67.5" height="222.5"/>
                                 <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -237,7 +237,7 @@
                                     <action selector="performOperation:" destination="ney-aN-ZO2" eventType="touchUpInside" id="sDv-ni-FA2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jha-aP-alb">
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jha-aP-alb" customClass="CustomButton" customModule="Calculator" customModuleProvider="target">
                                 <rect key="frame" x="192.5" y="196.5" width="67.5" height="67.5"/>
                                 <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -259,7 +259,7 @@
                                     <action selector="touchDigit:" destination="ney-aN-ZO2" eventType="touchUpInside" id="WW0-VQ-NGy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRO-Rb-qOc">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRO-Rb-qOc" customClass="CustomButton" customModule="Calculator" customModuleProvider="target">
                                 <rect key="frame" x="115" y="351.5" width="67.5" height="67.5"/>
                                 <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -281,7 +281,7 @@
                                     <action selector="touchDigit:" destination="ney-aN-ZO2" eventType="touchUpInside" id="vAG-WH-bsW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSy-IV-aBO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSy-IV-aBO" customClass="CustomButton" customModule="Calculator" customModuleProvider="target">
                                 <rect key="frame" x="115" y="429" width="67.5" height="67.5"/>
                                 <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -303,7 +303,7 @@
                                     <action selector="touchDigit:" destination="ney-aN-ZO2" eventType="touchUpInside" id="Cuq-T0-UwP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Et1-gm-AHe">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Et1-gm-AHe" customClass="CustomButton" customModule="Calculator" customModuleProvider="target">
                                 <rect key="frame" x="37.5" y="351.5" width="67.5" height="67.5"/>
                                 <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -325,7 +325,7 @@
                                     <action selector="touchDigit:" destination="ney-aN-ZO2" eventType="touchUpInside" id="Bdx-GK-b3O"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hg1-w3-zu0">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hg1-w3-zu0" customClass="CustomButton" customModule="Calculator" customModuleProvider="target">
                                 <rect key="frame" x="193" y="351.5" width="67.5" height="67.5"/>
                                 <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -459,29 +459,12 @@
                                 <exclude reference="krV-Cc-ilN"/>
                                 <exclude reference="lBt-ze-E22"/>
                                 <exclude reference="p4Z-y1-EES"/>
-                                <exclude reference="7V7-Ny-mfp"/>
-                                <exclude reference="aAj-gz-F9Q"/>
-                                <exclude reference="s3s-vW-FxM"/>
-                                <exclude reference="EFu-8e-vZg"/>
-                                <exclude reference="hDr-3W-fvI"/>
-                                <exclude reference="vvo-zD-L0M"/>
                                 <exclude reference="18w-es-bZ8"/>
                                 <exclude reference="6oY-3v-zct"/>
                                 <exclude reference="D7T-ga-ZdH"/>
                                 <exclude reference="WdK-XH-Dc8"/>
                                 <exclude reference="kRD-EZ-muG"/>
                                 <exclude reference="t22-HT-5MA"/>
-                                <exclude reference="2z4-8I-WHD"/>
-                                <exclude reference="4vH-zA-n6e"/>
-                                <exclude reference="7Q7-dp-cSo"/>
-                                <exclude reference="O9I-he-fPE"/>
-                                <exclude reference="S1b-Lr-OHq"/>
-                                <exclude reference="T0Y-5b-zDA"/>
-                                <exclude reference="dAb-ci-pY0"/>
-                                <exclude reference="2sj-sm-PBN"/>
-                                <exclude reference="BxU-5a-oCG"/>
-                                <exclude reference="M3M-L9-zlU"/>
-                                <exclude reference="hsT-Io-WpF"/>
                                 <exclude reference="JtB-2H-QsR"/>
                                 <exclude reference="TML-7n-8Nl"/>
                                 <exclude reference="atj-Bk-Dnl"/>
@@ -489,27 +472,16 @@
                                 <exclude reference="tdk-Po-aQT"/>
                                 <exclude reference="vNS-N0-vh9"/>
                                 <exclude reference="vk9-OF-HYT"/>
-                                <exclude reference="2Ec-9a-294"/>
-                                <exclude reference="45T-CM-5fk"/>
-                                <exclude reference="Vo3-aw-qi6"/>
-                                <exclude reference="Xhi-uK-hoE"/>
-                                <exclude reference="bRE-XQ-f9e"/>
-                                <exclude reference="jm5-lc-O8f"/>
-                                <exclude reference="ybx-4I-PqU"/>
-                                <exclude reference="EYk-Dh-5DV"/>
-                                <exclude reference="HC6-DY-RE9"/>
-                                <exclude reference="Hfp-Qk-6nQ"/>
-                                <exclude reference="Spp-uZ-fyG"/>
-                                <exclude reference="YSI-IP-jmH"/>
-                                <exclude reference="ezU-iw-DLX"/>
-                                <exclude reference="qfR-zd-Uhu"/>
-                                <exclude reference="020-Gx-UJb"/>
-                                <exclude reference="W4D-jd-KLk"/>
-                                <exclude reference="imi-iw-DBL"/>
-                                <exclude reference="kkl-rb-FEh"/>
-                                <exclude reference="sdn-Oe-VJ6"/>
-                                <exclude reference="tiD-aV-cMx"/>
-                                <exclude reference="y7o-pt-uMr"/>
+                                <exclude reference="7V7-Ny-mfp"/>
+                                <exclude reference="aAj-gz-F9Q"/>
+                                <exclude reference="s3s-vW-FxM"/>
+                                <exclude reference="2z4-8I-WHD"/>
+                                <exclude reference="4vH-zA-n6e"/>
+                                <exclude reference="7Q7-dp-cSo"/>
+                                <exclude reference="O9I-he-fPE"/>
+                                <exclude reference="S1b-Lr-OHq"/>
+                                <exclude reference="T0Y-5b-zDA"/>
+                                <exclude reference="dAb-ci-pY0"/>
                                 <exclude reference="6MP-6B-jd1"/>
                                 <exclude reference="8Vm-aZ-ufg"/>
                                 <exclude reference="Jcq-WW-4ED"/>
@@ -518,6 +490,34 @@
                                 <exclude reference="vmV-96-LEj"/>
                                 <exclude reference="vmz-rJ-Kxm"/>
                                 <exclude reference="xdt-6w-7kc"/>
+                                <exclude reference="EYk-Dh-5DV"/>
+                                <exclude reference="HC6-DY-RE9"/>
+                                <exclude reference="Hfp-Qk-6nQ"/>
+                                <exclude reference="Spp-uZ-fyG"/>
+                                <exclude reference="YSI-IP-jmH"/>
+                                <exclude reference="ezU-iw-DLX"/>
+                                <exclude reference="qfR-zd-Uhu"/>
+                                <exclude reference="EFu-8e-vZg"/>
+                                <exclude reference="hDr-3W-fvI"/>
+                                <exclude reference="vvo-zD-L0M"/>
+                                <exclude reference="2sj-sm-PBN"/>
+                                <exclude reference="BxU-5a-oCG"/>
+                                <exclude reference="M3M-L9-zlU"/>
+                                <exclude reference="hsT-Io-WpF"/>
+                                <exclude reference="020-Gx-UJb"/>
+                                <exclude reference="W4D-jd-KLk"/>
+                                <exclude reference="imi-iw-DBL"/>
+                                <exclude reference="kkl-rb-FEh"/>
+                                <exclude reference="sdn-Oe-VJ6"/>
+                                <exclude reference="tiD-aV-cMx"/>
+                                <exclude reference="y7o-pt-uMr"/>
+                                <exclude reference="2Ec-9a-294"/>
+                                <exclude reference="45T-CM-5fk"/>
+                                <exclude reference="Vo3-aw-qi6"/>
+                                <exclude reference="Xhi-uK-hoE"/>
+                                <exclude reference="bRE-XQ-f9e"/>
+                                <exclude reference="jm5-lc-O8f"/>
+                                <exclude reference="ybx-4I-PqU"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
@@ -533,18 +533,18 @@
                                 <include reference="6oY-3v-zct"/>
                                 <include reference="D7T-ga-ZdH"/>
                                 <include reference="WdK-XH-Dc8"/>
-                                <include reference="2z4-8I-WHD"/>
-                                <include reference="4vH-zA-n6e"/>
-                                <include reference="O9I-he-fPE"/>
-                                <include reference="dAb-ci-pY0"/>
                                 <include reference="JtB-2H-QsR"/>
                                 <include reference="atj-Bk-Dnl"/>
                                 <include reference="faS-eg-LEn"/>
                                 <include reference="tdk-Po-aQT"/>
-                                <include reference="2Ec-9a-294"/>
-                                <include reference="Vo3-aw-qi6"/>
-                                <include reference="bRE-XQ-f9e"/>
-                                <include reference="ybx-4I-PqU"/>
+                                <include reference="2z4-8I-WHD"/>
+                                <include reference="4vH-zA-n6e"/>
+                                <include reference="O9I-he-fPE"/>
+                                <include reference="dAb-ci-pY0"/>
+                                <include reference="6MP-6B-jd1"/>
+                                <include reference="8Vm-aZ-ufg"/>
+                                <include reference="X1T-es-WWq"/>
+                                <include reference="YlV-qC-kqp"/>
                                 <include reference="EYk-Dh-5DV"/>
                                 <include reference="HC6-DY-RE9"/>
                                 <include reference="Hfp-Qk-6nQ"/>
@@ -553,10 +553,10 @@
                                 <include reference="imi-iw-DBL"/>
                                 <include reference="sdn-Oe-VJ6"/>
                                 <include reference="y7o-pt-uMr"/>
-                                <include reference="6MP-6B-jd1"/>
-                                <include reference="8Vm-aZ-ufg"/>
-                                <include reference="X1T-es-WWq"/>
-                                <include reference="YlV-qC-kqp"/>
+                                <include reference="2Ec-9a-294"/>
+                                <include reference="Vo3-aw-qi6"/>
+                                <include reference="bRE-XQ-f9e"/>
+                                <include reference="ybx-4I-PqU"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -569,38 +569,38 @@
                                 <include reference="dpW-Kv-rKb"/>
                                 <include reference="gA2-Uy-J6J"/>
                                 <include reference="p4Z-y1-EES"/>
-                                <include reference="7V7-Ny-mfp"/>
-                                <include reference="aAj-gz-F9Q"/>
-                                <include reference="s3s-vW-FxM"/>
-                                <include reference="EFu-8e-vZg"/>
-                                <include reference="hDr-3W-fvI"/>
-                                <include reference="vvo-zD-L0M"/>
                                 <include reference="18w-es-bZ8"/>
                                 <include reference="kRD-EZ-muG"/>
                                 <include reference="t22-HT-5MA"/>
-                                <include reference="7Q7-dp-cSo"/>
-                                <include reference="S1b-Lr-OHq"/>
-                                <include reference="T0Y-5b-zDA"/>
-                                <include reference="2sj-sm-PBN"/>
-                                <include reference="BxU-5a-oCG"/>
-                                <include reference="M3M-L9-zlU"/>
-                                <include reference="hsT-Io-WpF"/>
                                 <include reference="TML-7n-8Nl"/>
                                 <include reference="vNS-N0-vh9"/>
                                 <include reference="vk9-OF-HYT"/>
-                                <include reference="45T-CM-5fk"/>
-                                <include reference="Xhi-uK-hoE"/>
-                                <include reference="jm5-lc-O8f"/>
-                                <include reference="Spp-uZ-fyG"/>
-                                <include reference="YSI-IP-jmH"/>
-                                <include reference="qfR-zd-Uhu"/>
-                                <include reference="W4D-jd-KLk"/>
-                                <include reference="kkl-rb-FEh"/>
-                                <include reference="tiD-aV-cMx"/>
+                                <include reference="7V7-Ny-mfp"/>
+                                <include reference="aAj-gz-F9Q"/>
+                                <include reference="s3s-vW-FxM"/>
+                                <include reference="7Q7-dp-cSo"/>
+                                <include reference="S1b-Lr-OHq"/>
+                                <include reference="T0Y-5b-zDA"/>
                                 <include reference="Jcq-WW-4ED"/>
                                 <include reference="vmV-96-LEj"/>
                                 <include reference="vmz-rJ-Kxm"/>
                                 <include reference="xdt-6w-7kc"/>
+                                <include reference="Spp-uZ-fyG"/>
+                                <include reference="YSI-IP-jmH"/>
+                                <include reference="qfR-zd-Uhu"/>
+                                <include reference="EFu-8e-vZg"/>
+                                <include reference="hDr-3W-fvI"/>
+                                <include reference="vvo-zD-L0M"/>
+                                <include reference="2sj-sm-PBN"/>
+                                <include reference="BxU-5a-oCG"/>
+                                <include reference="M3M-L9-zlU"/>
+                                <include reference="hsT-Io-WpF"/>
+                                <include reference="W4D-jd-KLk"/>
+                                <include reference="kkl-rb-FEh"/>
+                                <include reference="tiD-aV-cMx"/>
+                                <include reference="45T-CM-5fk"/>
+                                <include reference="Xhi-uK-hoE"/>
+                                <include reference="jm5-lc-O8f"/>
                             </mask>
                         </variation>
                     </view>
@@ -609,16 +609,6 @@
                         <outlet property="display" destination="khk-JW-Ob8" id="u0G-0k-w3w"/>
                         <outlet property="opButton" destination="oqE-X2-Vy0" id="sgV-O4-vcD"/>
                         <outlet property="superviewOfDisplay" destination="b0G-uE-r5Y" id="qG7-JZ-XBk"/>
-                        <outletCollection property="digitButtons" destination="StY-Ma-shL" collectionClass="NSMutableArray" id="4aH-vb-ghx"/>
-                        <outletCollection property="digitButtons" destination="iuz-S7-scK" collectionClass="NSMutableArray" id="Z2g-Dx-yRh"/>
-                        <outletCollection property="digitButtons" destination="Jha-aP-alb" collectionClass="NSMutableArray" id="jhX-DQ-VfF"/>
-                        <outletCollection property="digitButtons" destination="HjK-de-kIL" collectionClass="NSMutableArray" id="qku-xm-gqW"/>
-                        <outletCollection property="digitButtons" destination="v4M-Zp-Wp1" collectionClass="NSMutableArray" id="7tl-NF-7ha"/>
-                        <outletCollection property="digitButtons" destination="owF-ia-dB9" collectionClass="NSMutableArray" id="qh5-gS-ljF"/>
-                        <outletCollection property="digitButtons" destination="Et1-gm-AHe" collectionClass="NSMutableArray" id="HID-uY-JtT"/>
-                        <outletCollection property="digitButtons" destination="WRO-Rb-qOc" collectionClass="NSMutableArray" id="hAn-9y-ip9"/>
-                        <outletCollection property="digitButtons" destination="hg1-w3-zu0" collectionClass="NSMutableArray" id="IcZ-a0-R9L"/>
-                        <outletCollection property="digitButtons" destination="aSy-IV-aBO" collectionClass="NSMutableArray" id="wiO-BW-TsY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rfz-Ri-0Di" userLabel="First Responder" sceneMemberID="firstResponder"/>

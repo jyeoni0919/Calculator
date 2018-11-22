@@ -13,6 +13,7 @@
 		8850495721A434EE00D5B8C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8850495621A434EE00D5B8C0 /* Assets.xcassets */; };
 		8850495A21A434EE00D5B8C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8850495821A434EE00D5B8C0 /* LaunchScreen.storyboard */; };
 		8850496221A43AD400D5B8C0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8850496121A43AD400D5B8C0 /* SecondViewController.swift */; };
+		88DA2DED21A73D7E0012E1A7 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA2DEC21A73D7E0012E1A7 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8850495921A434EE00D5B8C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8850495B21A434EE00D5B8C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8850496121A43AD400D5B8C0 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		88DA2DEC21A73D7E0012E1A7 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				8850495121A434ED00D5B8C0 /* FirstViewController.swift */,
 				8850496121A43AD400D5B8C0 /* SecondViewController.swift */,
 				8850495321A434ED00D5B8C0 /* Main.storyboard */,
+				88DA2DEC21A73D7E0012E1A7 /* CustomButton.swift */,
 				8850495621A434EE00D5B8C0 /* Assets.xcassets */,
 				8850495821A434EE00D5B8C0 /* LaunchScreen.storyboard */,
 				8850495B21A434EE00D5B8C0 /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88DA2DED21A73D7E0012E1A7 /* CustomButton.swift in Sources */,
 				8850496221A43AD400D5B8C0 /* SecondViewController.swift in Sources */,
 				8850495221A434ED00D5B8C0 /* FirstViewController.swift in Sources */,
 				8850495021A434ED00D5B8C0 /* AppDelegate.swift in Sources */,

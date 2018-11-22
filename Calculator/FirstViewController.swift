@@ -13,11 +13,24 @@ class FirstViewController: UIViewController {
     //private let operators = ["+", "-", "*", "/"] //사칙 연산자
     private let cellIdentifier = "operatorCell"
     
-    enum Operator: String, CaseIterable {
-        case add = "+"
-        case subtraction = "-"
-        case multiply = "*"
-        case division = "/"
+    enum Operator: Int, CaseIterable {
+        case add = 0
+        case subtraction = 1
+        case multiply = 2
+        case division = 3
+        
+        func getOperator() -> String {
+            switch self {
+            case .add:
+                return "+"
+            case .subtraction:
+                return "-"
+            case .multiply:
+                return "*"
+            case .division:
+                return "/"
+            }
+        }
     }
 
     //MARK: Life Cycle
@@ -31,19 +44,9 @@ extension FirstViewController: UITableViewDelegate {
     //row가 select되었을 때 호출되는 메서드
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         var selectedOperator = ""
-        //selectedOperator = operators[indexPath.row]
-        switch indexPath.row {
-        case 0:
-            selectedOperator = Operator.add.rawValue
-        case 1:
-            selectedOperator = Operator.subtraction.rawValue
-        case 2:
-            selectedOperator = Operator.multiply.rawValue
-        case 3:
-            selectedOperator = Operator.division.rawValue
-        default:
-            print("잘못된 접근")
-        }
+        
+        guard let operation = Operator.init(rawValue: indexPath.row) else { return }
+        selectedOperator = operation.getOperator()
         
         guard let svc = storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController else { return }
         
@@ -64,19 +67,9 @@ extension FirstViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
         
-        //cell.textLabel?.text = operators[indexPath.row]
-        switch indexPath.row {
-        case 0:
-            cell.textLabel?.text = Operator.add.rawValue
-        case 1:
-            cell.textLabel?.text = Operator.subtraction.rawValue
-        case 2:
-            cell.textLabel?.text = Operator.multiply.rawValue
-        case 3:
-            cell.textLabel?.text = Operator.division.rawValue
-        default:
-            cell.textLabel?.text = ""
-        }
+        guard let operation = Operator.init(rawValue: indexPath.row) else { return UITableViewCell() }
+        cell.textLabel?.text = operation.getOperator()
+        
         return cell
     }
 }

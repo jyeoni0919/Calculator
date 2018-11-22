@@ -12,19 +12,15 @@ class SecondViewController: UIViewController {
     //MARK: IBOutlet
     @IBOutlet weak var opButton: UIButton! //연산자 버튼(+,-,*,/)
     @IBOutlet weak var display: UILabel! //결과 보여주는 view
-    @IBOutlet var digitButtons: [UIButton]! //숫자 버튼들
     @IBOutlet var superviewOfDisplay: UIView!
     
+    //MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
         opButton.setTitle(navigationItem.title, for: .normal)
         
-        opButton.layer.cornerRadius = 5.0
         superviewOfDisplay.layer.cornerRadius = 5.0
-        for i in 0..<digitButtons.count {
-            digitButtons[i].layer.cornerRadius = 5.0
-        }
     }
     
     //display값은 String니깐 실제 계산을 위해서 Double로 바꿔주기
@@ -47,7 +43,7 @@ class SecondViewController: UIViewController {
         }
         
         //아직 숫자를 입력중이라면
-        if(isUserInTheMiddleOfTyping) {
+        if isUserInTheMiddleOfTyping {
             guard let displayText = display.text else { return }
             let textCurrentlyInDisplay = displayText
             display.text = textCurrentlyInDisplay + digit
