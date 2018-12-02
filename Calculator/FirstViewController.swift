@@ -10,7 +10,6 @@ import UIKit
 
 class FirstViewController: UIViewController {
     //MARK: Properties
-    //private let operators = ["+", "-", "*", "/"] //사칙 연산자
     private let cellIdentifier = "operatorCell"
     
     enum Operator: Int, CaseIterable {
@@ -33,9 +32,13 @@ class FirstViewController: UIViewController {
         }
     }
 
+    @IBOutlet var tableView: UITableView!
+    
     //MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.tableFooterView = UIView() 
     }
 }
 
@@ -43,6 +46,9 @@ class FirstViewController: UIViewController {
 extension FirstViewController: UITableViewDelegate {
     //row가 select되었을 때 호출되는 메서드
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedCell = tableView.cellForRow(at: indexPath)
+        selectedCell?.isSelected = false
+        
         var selectedOperator = ""
         
         guard let operation = Operator.init(rawValue: indexPath.row) else { return }
@@ -53,6 +59,7 @@ extension FirstViewController: UITableViewDelegate {
         //데이터 전달
         svc.navigationItem.title = selectedOperator
         
+        //화면 전환
         navigationController?.pushViewController(svc, animated: true)
     }
 }
@@ -60,7 +67,6 @@ extension FirstViewController: UITableViewDelegate {
 //MARK: UITableViewDataSource
 extension FirstViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //return operators.count
         return Operator.allCases.count
     }
     
